@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "cdv-analytics"
+version = "0.1.0"
+description = "Data Analytics case for Casa dos Ventos"
+authors = ["Nuno de Paula <nunodepaula@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+geopandas = "^1.0.1"
+matplotlib = "^3.9.2"
+requests = "^2.32.3"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+mypy = "^1.13.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["ALL"]
+
+pydocstyle.convention = "google"
